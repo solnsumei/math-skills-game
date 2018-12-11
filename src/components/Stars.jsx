@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { range } from 'lodash-es';
+import { range } from '../utils/helpers';
 
 const Stars = ({ numberOfStars }) => (
   <div className="col-5">

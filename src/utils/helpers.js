@@ -6,7 +6,7 @@
  * @param {int} n
  * @returns {boolean} true or false
  */
-const possibleCombinationSum = (arr, n) => {
+export const possibleCombinationSum = (arr, n) => {
   if (arr.indexOf(n) >= 0) {
     return true;
   }
@@ -34,4 +34,12 @@ const possibleCombinationSum = (arr, n) => {
   return false;
 };
 
-export default possibleCombinationSum;
+export const range = (start, end) => {
+  var numberArray = [];
+  let i = start;
+  while (i < end) {
+    numberArray.push(i);
+    i++;
+  }
+  return numberArray;
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { range } from 'lodash-es';
 
-import possibleCombinationSum from '../utils/helpers';
+import { possibleCombinationSum, range } from '../utils/helpers';
 
 import Stars from './Stars';
 import Button from './Button';
@@ -112,7 +111,7 @@ class Game extends Component {
    * @memberof Game
    */
   posibleSolutions = ({ randomNumberOfStars, usedNumbers }) => {
-    const possibleNumbers = range(1, 10)
+    const possibleNumbers = range(0, 10)
       .filter(number => usedNumbers.indexOf(number) === -1);
 
     return possibleCombinationSum(possibleNumbers, randomNumberOfStars);

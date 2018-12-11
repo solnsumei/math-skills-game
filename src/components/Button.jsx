@@ -24,7 +24,7 @@ const Button = ({
     default:
       button = <button
         className={`btn ${numbersWereSelected ? 'btn-warning' : ''}`}
-        disabled={selectedNumbers.length === 0}
+        disabled={!numbersWereSelected}
         onClick={checkAnswer}>=
       </button>;
       break;

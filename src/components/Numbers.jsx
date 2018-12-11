@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { range } from 'lodash-es';
+import { range } from '../utils/helpers';
 
 const Numbers = ({ selectedNumbers, selectNumber, usedNumbers }) => {
   const numberClassName = (number) => {
